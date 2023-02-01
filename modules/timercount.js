@@ -1,6 +1,6 @@
 import { DateTime } from '../luxon.js';
 
-function displayDate() {
+let displayDate = () =>  {
   const date = document.getElementById('date');
   const dateOnly = DateTime.local().toString().substring(0, 10);
   const timeonly = DateTime.local().toString().substring(11, 19);
